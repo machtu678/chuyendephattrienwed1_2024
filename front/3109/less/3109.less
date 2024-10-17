@@ -1,0 +1,114 @@
+.type-3109 {
+    .title1 {
+        text-align: center;
+
+        h2 {
+            font-weight: bold;
+        }
+
+        hr {
+            width: 30px;
+            color: #00bfa5;
+            border: 1px solid;
+        }
+
+        p {
+            font-size: 14px;
+            color: #999999;
+        }
+    }
+
+    .list-item {
+        margin-top: 50px;
+
+        &:hover {
+            .item {
+                .tilte-item {
+                    span {
+                        background: #00bfa5;
+
+
+
+                        &::before {
+                            border: 1px solid #00bfa5;
+
+                        }
+
+                        &::after {
+                            background: #00bfa5;
+
+                        }
+                    }
+
+                    a {
+                        color: #00bfa5;
+                    }
+                }
+            }
+        }
+
+        .item {
+
+            .tilte-item {
+                display: flex;
+                align-items: center;
+                gap: 30px;
+                margin-left: 10px;
+
+                span {
+                    width: 78px;
+                    background-color: #2e4c66;
+                    height: 78px;
+                    font-size: 38px;
+                    color: #fff;
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: background 0.3s ease;
+
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        border: 1px solid #c3cbd1;
+                        top: -10px;
+                        left: -10px;
+                        z-index: -10;
+                    }
+
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        width: 100%;
+                        height: 1px;
+                        top: 20px;
+                        right: -40px;
+                        z-index: -10;
+                        background: #2e4c66;
+                    }
+                }
+
+                a {
+                    color: #2e4c66;
+                    font-weight: bold;
+                    text-decoration: none;
+                }
+
+            }
+
+            .content-item {
+                margin-top: 20px;
+
+                p {
+                    font-size: 13px;
+                    line-height: 30px;
+                    color: #999999;
+                }
+            }
+        }
+    }
+
+}
